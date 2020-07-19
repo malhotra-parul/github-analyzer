@@ -9,7 +9,7 @@ const Users = ()=>{
 
         useEffect(() => {
             allUsers();
-        }, []);
+        }, [ allUsers ]);
 
         if(loading){
             return <Spinners />;
