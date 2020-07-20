@@ -9,7 +9,8 @@ const Users = ()=>{
 
         useEffect(() => {
             allUsers();
-        }, [ allUsers ]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        }, []);
 
         if(loading){
             return <Spinners />;
